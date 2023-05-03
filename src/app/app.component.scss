@@ -1,3 +1,5 @@
+@import 'include-media';
+
 .ythi-landing {
     display: flex;
     justify-content: center;
@@ -13,4 +15,16 @@
     height: 500px;
     color: white;
     background: royalblue;
+}
+
+@include media('<desktop') {
+    .ythi-landing-container {
+        background:hotpink;
+    }
+}
+
+@include media('<tablet') {
+    .ythi-landing-container {
+        background: black;
+    }
 }
